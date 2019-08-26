@@ -1,4 +1,12 @@
-import functions.py
+from functions import table_stats, gen_table, gen_dataframe
+import pandas as pd
+
+df = gen_dataframe(10)
+
+print(df)
+
+with open("test.html", "w") as fo:
+    df.to_html(fo)
 
 (count_num, prime_fac) = table_stats(200)
 
