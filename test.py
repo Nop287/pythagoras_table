@@ -1,12 +1,7 @@
-from functions import table_stats, gen_table, gen_dataframe
+from functions import table_stats, gen_table, gen_dataframe, write_html
 import pandas as pd
 
-df = gen_dataframe(10)
-
-print(df)
-
-with open("test.html", "w") as fo:
-    df.to_html(fo)
+write_html("test.html", 10, 0.1)
 
 (count_num, prime_fac) = table_stats(200)
 
