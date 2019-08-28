@@ -3,7 +3,7 @@ import pandas as pd
 
 write_html("test.html", 10, 0.1)
 
-(count_num, prime_fac) = table_stats(200)
+(count_num, prime_fac) = table_stats(100)
 
 # make a list of items in the dictionary sorted by occurence
 list_of_items = sorted(count_num.items(), key=lambda x : x[1])
